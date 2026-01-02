@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Signup</title>
+    <link rel="icon" type="image/png" href="images/Library_Logo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign Up</h2>
+
+    <select id="role">
+        <option value="">Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="student">Student</option>
+    </select>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="signup()">Create Account</button>
+
+    <p>Already have an account?
+        <a href="index.html">Login</a>
+    </p>
+
+    <p id="msg"></p>
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>

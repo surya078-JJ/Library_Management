@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<nav>
+    <img src="images/Library_Logo.png" alt="" class="logo">
+    <h2>Student Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+</nav>
+<div clss="bg">
+<h3>Available Books</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Available Qty</th>
+        </tr>
+    </thead>
+    <tbody id="bookTable"></tbody>
+</table>
+
+<h3>My Issued Books</h3>
+
+<div class="form">
+    <input type="text" id="studentId" placeholder="Enter Your Student ID">
+    <button onclick="viewMyBooks()">View</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Book ID</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+        </tr>
+    </thead>
+    <tbody id="issuedTable"></tbody>
+</table>
+</div>
+<script src="student.js"></script>
+</body>
+</html>

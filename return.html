@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return Book</title>
+    <link rel="icon" type="image/png" href="images/Library_Logo.png">
+    <link rel="stylesheet" href="return.css">
+</head>
+<body>
+
+<h2>Return Book</h2>
+
+<div class="form">
+    <input type="text" id="studentId" placeholder="Student ID">
+    <input type="text" id="bookId" placeholder="Book ID">
+    <button onclick="returnBook()">Return Book</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Book ID</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="returnTable"></tbody>
+</table>
+
+<a href="admin-dashboard.html" class="back">⬅ Back to Dashboard</a>
+
+<script src="return.js"></script>
+</body>
+</html>

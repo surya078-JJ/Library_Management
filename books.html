@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Books</title>
+    <link rel="icon" type="image/png" href="images/Library_Logo.png">
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+
+<h2>Manage Books</h2>
+
+<div class="form">
+    <input type="text" id="bookId" placeholder="Book ID">
+    <input type="text" id="title" placeholder="Book Title">
+    <input type="text" id="author" placeholder="Author">
+    <input type="number" id="quantity" placeholder="Quantity">
+    <button onclick="addBook()">Add Book</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="bookTable"></tbody>
+</table>
+
+<a href="admin-dashboard.html" class="back">⬅ Back to Dashboard</a>
+
+<script src="books.js"></script>
+</body>
+</html>

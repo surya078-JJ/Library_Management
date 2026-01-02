@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+nav {
+    background: #2c7be5;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    padding: 6px 12px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+nav img.logo {
+    height: 60px;
+}   
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.actions a {
+    padding: 10px 15px;
+    background: #2c7be5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* ===== DARK MODE ===== */
+body.dark {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark nav {
+    background: #1e1e1e;
+}
+
+body.dark table {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark th, 
+body.dark td {
+    border-color: #444;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark input,
+body.dark select {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark button {
+    background: #444;
+    color: white;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("images/library_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* change 0.5 to adjust dim */
+    z-index: -1;
+}
+

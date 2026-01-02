@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="images/Library_Logo.png">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<nav>
+    <img src="images/Library_Logo.png" alt="logo" class="logo">
+    <h2>Library Admin</h2>
+    <button onclick="logout()">Logout</button>
+    
+</nav>
+
+<div class="dashboard">
+    <div class="card">
+        <h3>Total Books</h3>
+        <p id="totalBooks">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Issued Books</h3>
+        <p id="issuedBooks">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Available Books</h3>
+        <p id="availableBooks">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Students</h3>
+        <p id="totalStudents">0</p>
+    </div>
+
+    
+</div>
+
+<div class="actions">
+    <a href="books.html">Manage Books</a>
+    <a href="students.html">Manage Students</a>
+    <a href="issue.html">Issue Book</a>
+    <a href="return.html">Return Book</a>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

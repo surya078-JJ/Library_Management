@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Students</title>
+    <link rel="icon" type="image/png" href="images/Library_Logo.png">
+    <link rel="stylesheet" href="students.css">
+</head>
+<body>
+
+<h2>Manage Students</h2>
+
+<div class="form">
+    <input type="text" id="studentId" placeholder="Student ID">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="text" id="dept" placeholder="Department">
+    <input type="text" id="year" placeholder="Year">
+    <button onclick="addStudent()">Add Student</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Year</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+</table>
+
+<a href="admin-dashboard.html" class="back">⬅ Back to Dashboard</a>
+
+<script src="students.js"></script>
+</body>
+</html>

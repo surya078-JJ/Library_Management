@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Login</title>
+    <link rel="icon" type="image/png" href="images/Library_Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button> -->
+
+<div class="container">
+    <h2>Library Login</h2>
+    
+    <select id="role">
+        <option value="">Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="student">Student</option>
+    </select>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p>Don’t have an account?
+        <a href="signup.html">Sign up</a>
+    </p>
+
+    <p id="msg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

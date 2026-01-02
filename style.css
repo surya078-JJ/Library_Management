@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("images/library_bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Login box */
+.container {
+    width: 300px;
+    background: white;
+    padding: 40px;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    background: #2c7be5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a5dcc;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+#msg {
+    text-align: center;
+    color: red;
+}
